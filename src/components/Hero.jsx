@@ -7,9 +7,13 @@ const Hero = () => {
           <div className='relative min-h-screen md:flex items-center overflow-hidden'>
                <div className='container relative pt-4 mt-[100px]'>
                     <div className='w-full md:w-[65%] lg:w-[55%] z-30 text-center md:text-left p-4'>
-                         <h1 className='font-bold tracking-tight leading-none text-[4rem] sm:text-[5rem] md:text-[6rem] 2xl:text-[7rem] w-max mx-auto mb-6 md:mx-0 text-slate-900 dark:text-white'>
-                              Identity
-                              <span className='block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-sky-500 flex'>Amplified<span className='text-[50%]'>&#8482;</span></span>
+                         <h1 className='font-bold tracking-tight leading-none text-[4rem] sm:text-[5rem] md:text-[6rem] 2xl:text-[7rem] w-max mx-auto mb-6 md:mx-0'>
+                              <span className='text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-sky-200'>
+                                   Identity
+                              </span>
+                              <span className='block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-sky-500 flex'>
+                                   Amplified<span className='text-[50%]'>&#8482;</span>
+                              </span>
                          </h1>
                          <p className='text-slate-900 dark:text-white mb-12 sm:text-xl md:text-2xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus est perferendis.</p>
                          <BtnIonite text='Get Started' />
