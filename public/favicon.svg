@@ -1,0 +1,17 @@
+<svg id="a"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.12 51.35">
+     <defs>
+          <style>.c{fill:url(#b);}</style>
+          <linearGradient id="b" x1="27.42" y1="37.03" x2="4.7" y2="14.32" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+               <stop offset="0" stop-color="#0ea5e9"/>
+               <stop offset=".19" stop-color="#10a7e4"/>
+               <stop offset=".39" stop-color="#17add8"/>
+               <stop offset=".59" stop-color="#22b8c4"/>
+               <stop offset=".78" stop-color="#33c8a8"/>
+               <stop offset=".98" stop-color="#47db83"/>
+               <stop offset="1" stop-color="#4ade80"/>
+          </linearGradient>
+     </defs>
+     <path class="c" d="M29.05,16.23c-1.85-2.54-4.31-4.39-7.03-5.47l-4.18,3.69L24.85,.94c.31-.6-.4-1.21-.94-.81L6.62,12.68C3.04,15.28,.84,19.1,.2,23.16c-.64,4.06,.26,8.36,2.87,11.96,1.85,2.54,4.31,4.38,7.03,5.47l4.18-3.7-7.02,13.53c-.31,.6,.4,1.21,.95,.81l17.29-12.56c3.59-2.61,5.78-6.42,6.42-10.48,.65-4.06-.26-8.36-2.86-11.95Zm-5.06,10.69c-.7,4.38-4.81,7.37-9.19,6.68-4.38-.7-7.37-4.81-6.67-9.19,.69-4.38,4.81-7.37,9.19-6.67,4.38,.69,7.37,4.81,6.68,9.18Z"/>
+</svg>

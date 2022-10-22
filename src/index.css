@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mont Font */
+@font-face {
+     font-family: 'Mont';
+     font-weight: 200;
+     font-display: block;
+     font-style: normal;
+     font-named-instance: 'Light';
+     src: url('fonts/Mont-Light.woff') format('woff2');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+     font-family: 'Mont';
+     font-weight: 300;
+     font-display: block;
+     font-style: normal;
+     font-named-instance: 'Book';
+     src: url('fonts/Mont-Book.woff') format('woff2');
+}
+
+@font-face {
+     font-family: 'Mont';
+     font-weight: 400;
+     font-display: block;
+     font-style: normal;
+     font-named-instance: 'Regular';
+     src: url('fonts/Mont-Regular.woff') format('woff2');
+}
+
+@font-face {
+     font-family: 'Mont';
+     font-weight: 500;
+     font-display: block;
+     font-style: normal;
+     font-named-instance: 'SemiBold';
+     src: url('fonts/Mont-SemiBold.woff') format('woff2');
+}
+
+@font-face {
+     font-family: 'Mont';
+     font-weight: 600;
+     font-display: block;
+     font-style: normal;
+     src: url('fonts/Mont-Bold.woff') format('woff2');
+     font-named-instance: 'Bold';
+}
+
+@layer components {
+     .btn {
+          @apply block leading-5 px-5 pt-3 pb-2.5 rounded-3xl drop-shadow-xl bg-gradient-to-br ring-inset ring-2 font-bold hover:scale-110 hover:rotate-1 transition-all;
+     }
+     .flex-center {
+          @apply flex justify-center items-center
+     }
+     .flex-between {
+          @apply flex justify-between items-center
+     }
+     .ionite {
+          @apply from-green-400 via-sky-500 to-green-400;
+     }
+     .amplified {
+          @apply from-orange-600 via-yellow-500 to-orange-600;
+     }
+}
+:root {
+     --sky-500: #0ea5e9;
+     --green-400: #4ade80;
+}
+button:focus {
+     outline: 0!important;
 }
