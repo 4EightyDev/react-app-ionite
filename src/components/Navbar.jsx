@@ -6,7 +6,7 @@ import { navLinks } from '../constants'
 const Navbar = () => {
 
      return (
-          <div className='ml-auto grow max-w-max'>
+          <div className='ml-auto max-w-max'>
                <Popover id='menuMobile'>
                     {({ open }) => (
                          <>
@@ -23,9 +23,9 @@ const Navbar = () => {
                                    leaveTo="opacity-0 translate-y-2"
                               >
                                    <Popover.Panel className="absolute right-4 w-[300px] max-w-[100%] lg:hidden">
-                                        <div className=" relative rounded-2xl bg-[#0A101F]/90 ring-1 ring-white/10 backdrop-blur-[6px]">
-                                             <div class="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-green-300/0 via-green-300 to-green-300/0"></div>
-                                             <div class="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-green-300/0 via-green-300 to-green-300/0"></div>
+                                        <div className=" relative rounded-2xl bg-slate-900/90 ring-1 ring-sky-500/30 backdrop-blur-[6px]">
+                                             <div class="absolute -top-px left-8 right-10 max-w-3/4 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
+                                             <div class="absolute -bottom-px left-10 right-8 max-w-3/4 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
                                              <ul className="relative grid gap-8 p-7">
                                                   {navLinks.map((item) => (
                                                        <li
@@ -49,8 +49,8 @@ const Navbar = () => {
                          </>
                     )}
                </Popover>
-               <nav id='menuDesktop' className='hidden lg:block'>
-                    <ul className="flex">
+               <nav id='menuDesktop' className='hidden lg:flex'>
+                    <ul className="flex hover:[&>*]:opacity-50">
                          {navLinks.map((item) => (
                               <li>
                                    <a className="text-sky-100 text-lg flex items-center content-between p-4" href={item.href} key={item.name}>

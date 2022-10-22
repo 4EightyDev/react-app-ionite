@@ -1,5 +1,6 @@
 import React from 'react'
 import { Ionite, Navbar } from './index'
+import BtnAmplified from './BtnAmplified'
 
 const Header = () => {
      return (
@@ -7,6 +8,9 @@ const Header = () => {
                <div className='container flex-center h-[100px]'>
                     <Ionite />
                     <Navbar />
+                    <div className='scale-75 hidden lg:block'>
+                         <BtnAmplified text='Request A Demo' />
+                    </div>
                </div>
           </header>
      )
