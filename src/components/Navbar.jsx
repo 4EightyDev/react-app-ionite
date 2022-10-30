@@ -1,17 +1,22 @@
-import { Popover, Transition } from '@headlessui/react'
-import React, { Fragment } from 'react'
-import { CgMenuRight } from 'react-icons/cg'
-import { navLinks } from '../constants'
+import { Popover, Transition } from "@headlessui/react";
+import React, { Fragment } from "react";
+import { CgMenuRight } from "react-icons/cg";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
-
      return (
-          <div className='ml-auto max-w-max'>
-               <Popover id='menuMobile'>
+          <div className="ml-auto max-w-max">
+               <Popover id="menuMobile">
                     {({ open }) => (
                          <>
-                              <Popover.Button className={`${open ? '' : 'text-green-400'} text-3xl lg:hidden`}>
-                                   <CgMenuRight className={`${open ? '' : 'text-sky-500'} text-green-400 transition duration-150 ease-in-out`} aria-hidden="true"/>
+                              <Popover.Button
+                                   className={`${open ? "" : "text-green-400"} text-3xl lg:hidden`}
+                              >
+                                   <CgMenuRight
+                                        className={`${open ? "" : "text-sky-500"
+                                             } text-green-400 transition duration-150 ease-in-out`}
+                                        aria-hidden="true"
+                                   />
                               </Popover.Button>
                               <Transition
                                    as={Fragment}
@@ -24,15 +29,15 @@ const Navbar = () => {
                               >
                                    <Popover.Panel className="absolute right-4 w-[300px] max-w-[100%] lg:hidden">
                                         <div className=" relative rounded-2xl bg-slate-900/90 ring-1 ring-sky-500/30 backdrop-blur-[6px]">
-                                             <div class="absolute -top-px left-8 right-10 max-w-3/4 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
-                                             <div class="absolute -bottom-px left-10 right-8 max-w-3/4 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
+                                             <div class="max-w-3/4 absolute -top-px left-8 right-10 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
+                                             <div class="max-w-3/4 absolute -bottom-px left-10 right-8 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0"></div>
                                              <ul className="relative grid gap-8 p-7">
                                                   {navLinks.map((item) => (
                                                        <li
                                                             key={item.name}
-                                                            className="-m-2 flex items-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-slate-900 hover:ring-green-500 hover:ring-1 hover:ring-opacity-20"
+                                                            className="-m-2 flex items-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-slate-900 hover:ring-1 hover:ring-green-500 hover:ring-opacity-20"
                                                        >
-                                                            <span className='text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-sky-500'>
+                                                            <span className="bg-gradient-to-br from-green-400 to-sky-500 bg-clip-text text-transparent">
                                                                  <item.icon aria-hidden="true" />
                                                             </span>
                                                             <a href={item.href} className="ml-4">
@@ -49,13 +54,17 @@ const Navbar = () => {
                          </>
                     )}
                </Popover>
-               <nav id='menuDesktop' className='hidden lg:flex'>
+               <nav id="menuDesktop" className="hidden lg:flex">
                     <ul className="flex hover:[&>*]:opacity-50">
                          {navLinks.map((item) => (
                               <li>
-                                   <a className="text-sky-100 text-lg flex items-center content-between p-4" href={item.href} key={item.name}>
-                                        <span className='mr-[8px] text-md text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-sky-500'>
-                                             <item.icon aria-hidden='true' />
+                                   <a
+                                        className="flex content-between items-center p-4 text-lg text-sky-100"
+                                        href={item.href}
+                                        key={item.name}
+                                   >
+                                        <span className="text-md mr-[8px] bg-gradient-to-br from-green-400 to-sky-500 bg-clip-text text-transparent">
+                                             <item.icon aria-hidden="true" />
                                         </span>
                                         {item.name}
                                    </a>
@@ -64,7 +73,7 @@ const Navbar = () => {
                     </ul>
                </nav>
           </div>
-     )
-}
+     );
+};
 
-export default Navbar
+export default Navbar;
