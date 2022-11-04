@@ -1,9 +1,5 @@
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/20/solid';
-import {
-	CursorArrowRaysIcon,
-	EnvelopeOpenIcon,
-	UsersIcon,
-} from '@heroicons/react/24/outline';
+import { UsersIcon } from '@heroicons/react/24/outline';
 
 const stats = [
 	{
@@ -91,7 +87,7 @@ const ModuleConfigurationStatus = (props) => {
 						<div className='absolute inset-x-0 bottom-0 border-t border-sky-900/50 bg-slate-900 px-4 py-4 brightness-125 sm:px-6'>
 							<div className='text-sm'>
 								<a
-									href='#'
+									href='##'
 									className='font-medium text-sky-500 hover:text-green-400'>
 									{' '}
 									View all<span className='sr-only'> {item.name} stats</span>

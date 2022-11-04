@@ -34,6 +34,7 @@ const navigation = {
 export default function Footer() {
 	return (
 		<footer className='bg-slate-900'>
+			<div className='h-px w-screen bg-gradient-to-r from-green-400 to-sky-500'></div>
 			<div className='mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8'>
 				<svg
 					id='ionite-logo'

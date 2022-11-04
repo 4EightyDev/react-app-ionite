@@ -27,7 +27,7 @@ const Header = () => {
 			<div
 				className={classNames(
 					scrollPosition > 0
-						? 'opacity-1 w-screen bg-sky-500/[30%] transition-all duration-500'
+						? 'opacity-1 w-screen bg-gradient-to-r from-green-400 to-sky-500 transition-all duration-500'
 						: 'w-0 opacity-0',
 					'mx-auto h-px transition-all duration-500'
 				)}></div>
