@@ -11,7 +11,6 @@ const HeroNew = () => {
 					<motion.div
 						id='introCopy'
 						className='text-center md:text-left'
-						viewport={{ once: true }}
 						whileInView={{ y: 0, opacity: 1 }}
 						initial={{ y: 50, opacity: 0 }}
 						transition={{ delay: 0.5, duration: 1 }}>
@@ -33,9 +32,8 @@ const HeroNew = () => {
 						id='introApp'
 						className='relative flex items-center justify-center'
 						whileInView={{ y: 0, opacity: 1 }}
-						viewport={{ once: true }}
 						initial={{ y: 50, opacity: 0 }}
-						transition={{ delay: 0.5, duration: 1 }}>
+						transition={{ delay: 0.65, duration: 1 }}>
 						<AppIonite class='w-full max-w-xl md:absolute md:left-0 md:w-screen md:max-w-3xl lg:max-w-3xl xl:max-w-4xl' />
 					</motion.div>
 				</div>
