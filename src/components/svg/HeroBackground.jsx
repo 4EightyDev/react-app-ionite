@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const HeroBackground = (props) => {
 	return (
 		<div>
-			<div className='fixed top-0 left-0 aspect-square w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-500/5 blur-3xl'></div>
+			<div className='xl:-left-screen fixed top-12 -left-12 aspect-square w-1/2 rounded-full bg-sky-500/20 blur-3xl sm:-left-48 sm:w-2/3 md:-left-1/2 xl:-top-1/2 xl:w-3/4 xl:bg-sky-500/[8%]'></div>
 			<motion.svg
 				id='a'
 				className={props.className}

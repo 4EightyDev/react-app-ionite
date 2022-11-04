@@ -38,7 +38,7 @@ const HeroNew = () => {
 					</motion.div>
 				</div>
 			</div>
-			<HeroBackground className='absolute -top-12 right-0 z-0 w-screen max-w-full sm:w-2/3 md:w-[60%] lg:w-1/2' />
+			<HeroBackground className='absolute -top-12 -right-24 z-0 w-2/3 max-w-full md:w-[60%] lg:w-1/2' />
 		</>
 	);
 };
