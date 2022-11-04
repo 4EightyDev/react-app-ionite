@@ -44,7 +44,7 @@ const ModuleConfigurationStatus = (props) => {
 					className={`relative w-full overflow-hidden border border-sky-900/50 bg-slate-900 px-4 pt-5 pb-12 shadow transition-colors transition-shadow hover:border-green-400 sm:px-6 sm:pt-6 ${props.moduleChildren}`}
 					whileInView={{ y: 0, opacity: 1 }}
 					initial={{ y: 300, opacity: 0 }}
-					transition={{ delay: i * 0.1, duration: 0.5 }}>
+					transition={{ delay: i * 0.1, duration: 0.4 }}>
 					<dt>
 						<div className='absolute flex scale-[1.5] items-center justify-center rounded-full bg-gradient-to-r from-green-400 to-sky-500 p-3 sm:scale-[1.8]'>
 							<item.icon
