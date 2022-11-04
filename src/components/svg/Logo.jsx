@@ -16,6 +16,7 @@ const Logo = () => {
 				id='ionite-logo'
 				whileInView={{ opacity: 1, filter: 'blur(0)' }}
 				initial={{ opacity: 0, filter: 'blur(200px)' }}
+				transition={{ delay: 1 }}
 				className={classNames(
 					scrollPosition > 0
 						? 'relative z-50 h-[60px] opacity-0 blur-lg transition-all duration-500'
@@ -49,8 +50,11 @@ const Logo = () => {
 				</g>
 			</motion.svg>
 
-			<svg
+			<motion.svg
 				id='ionite-mark'
+				whileInView={{ opacity: 1, filter: 'blur(0)' }}
+				initial={{ opacity: 0, filter: 'blur(200px)' }}
+				transition={{ delay: 0 }}
 				className={classNames(
 					scrollPosition > 0
 						? 'opacity-1 absolute left-0 top-[.01rem] z-30 h-[60px] transition-all delay-300 duration-500'
@@ -81,7 +85,7 @@ const Logo = () => {
 						d='M29.05,16.23c-1.85-2.54-4.31-4.39-7.03-5.47l-4.18,3.69L24.85,.94c.31-.6-.4-1.21-.94-.81L6.62,12.68C3.04,15.28,.84,19.1,.2,23.16c-.64,4.06,.26,8.36,2.87,11.96,1.85,2.54,4.31,4.38,7.03,5.47l4.18-3.7-7.02,13.53c-.31,.6,.4,1.21,.95,.81l17.29-12.56c3.59-2.61,5.78-6.42,6.42-10.48,.65-4.06-.26-8.36-2.86-11.95Zm-5.06,10.69c-.7,4.38-4.81,7.37-9.19,6.68-4.38-.7-7.37-4.81-6.67-9.19,.69-4.38,4.81-7.37,9.19-6.67,4.38,.69,7.37,4.81,6.68,9.18Z'
 					/>
 				</g>
-			</svg>
+			</motion.svg>
 		</a>
 	);
 };
