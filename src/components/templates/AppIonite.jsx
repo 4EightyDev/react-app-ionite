@@ -2,13 +2,13 @@ import { ModuleTable, ModuleConfigurationStatus } from '../';
 
 const AppIonite = (props) => {
 	return (
-		<div className={props.class}>
-			<div className='group relative w-full rounded-xl bg-[#0A101F]/70 ring-1 ring-sky-500/30 backdrop-blur-sm md:aspect-video md:rounded-2xl'>
-				<div class='max-w-3/4 absolute -top-px left-8 right-10 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0'></div>
-				<div class='max-w-3/4 absolute -bottom-px left-10 right-8 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0'></div>
+		<div className={`group transition-all ${props.class}`}>
+			<div className='relative w-full rounded-xl bg-[#0A101F]/70 ring-1 ring-sky-500/30 backdrop-blur-sm transition-all group-hover:ring-sky-500/5 md:aspect-video md:rounded-2xl'>
+				<div class='max-w-3/4 absolute -top-px left-8 right-10 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0 transition-all group-hover:opacity-20'></div>
+				<div class='max-w-3/4 absolute -bottom-px left-10 right-8 h-[2px] bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0 transition-all group-hover:opacity-20'></div>
 				<div
 					id='addressBar'
-					className='flex w-[calc(100%-2px)] items-center justify-center rounded-xl rounded-b-none rounded-l-none bg-sky-500/[3%] py-2'>
+					className='flex w-[calc(100%-2px)] items-center justify-center rounded-xl rounded-b-none rounded-l-none bg-sky-500/[3%] py-2 transition-all group-hover:opacity-10'>
 					<div className='absolute left-0 flex items-center justify-start px-3 [&>*]:mx-1'>
 						<span className='aspect-square w-2 rounded-full bg-[#f55f57] md:w-3'></span>
 						<span className='aspect-square w-2 rounded-full bg-[#f9bc2f] md:w-3'></span>
@@ -19,7 +19,6 @@ const AppIonite = (props) => {
 							https://app.ionite.com
 						</span>
 					</div>
-					<div></div>
 				</div>
 				<div
 					id='appWrapper'
