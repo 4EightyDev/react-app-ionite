@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 
-const HeroBackground = (props) => {
+const HeroBackground = () => {
 	return (
 		<div>
 			<div className='xl:-left-screen fixed top-12 -left-12 aspect-square w-1/2 rounded-full bg-sky-500/20 blur-3xl sm:-left-48 sm:w-2/3 md:-left-1/2 xl:-top-1/2 xl:w-3/4 xl:bg-sky-500/[8%]'></div>
+			<div className='fixed top-0 right-0 aspect-square h-full translate-x-3/4 rounded-full bg-sky-500/20 blur-3xl'></div>
 			<motion.svg
 				id='a'
-				className={props.className}
+				className='absolute -top-12 -right-24 z-0 hidden w-2/3 max-w-full md:w-[60%] lg:w-1/2'
 				whileInView={{ opacity: 0.02, filter: 'blur(0)' }}
 				viewport={{ once: true }}
 				initial={{ opacity: 0, filter: 'blur(20px)' }}

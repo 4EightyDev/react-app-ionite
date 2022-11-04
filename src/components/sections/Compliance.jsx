@@ -8,11 +8,10 @@ import { motion } from 'framer-motion';
 const Compliance = () => {
 	return (
 		<>
-			<div className='relative overflow-hidden border-t border-sky-500/30 bg-slate-900 py-8 brightness-[85%] sm:py-16 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center xl:py-36'>
-				<div className='boxed z-50 flex w-full flex-col gap-6 md:flex-row md:items-center lg:flex-col lg:px-32'>
+			<div className='relative overflow-hidden py-8 sm:py-16 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center xl:min-h-screen'>
+				<div className='boxed z-50 flex w-full flex-col gap-6 md:flex-row-reverse md:items-center lg:flex-col 2xl:px-32'>
 					<div className='relative w-full text-center md:text-left lg:pr-[25%]'>
 						<motion.div
-							viewport={{ once: true }}
 							whileInView={{ y: 0, opacity: 1 }}
 							initial={{ y: 50, opacity: 0 }}
 							transition={{ delay: 0, duration: 1 }}>
@@ -24,7 +23,6 @@ const Compliance = () => {
 							</p>
 						</motion.div>
 						<motion.p
-							viewport={{ once: true }}
 							whileInView={{ y: 0, opacity: 1 }}
 							initial={{ y: 50, opacity: 0 }}
 							transition={{ delay: 0.5, duration: 1 }}
@@ -50,7 +48,6 @@ const Compliance = () => {
 						/>
 					</motion.div>
 				</div>
-				<ComplianceBackground className='absolute top-20 w-screen opacity-[2%]' />
 			</div>
 		</>
 	);

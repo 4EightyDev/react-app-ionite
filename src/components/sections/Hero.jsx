@@ -6,7 +6,7 @@ const HeroNew = () => {
 		<>
 			<div
 				id='Hero'
-				className='boxed relative z-50 pt-6 pb-12 sm:pb-24 sm:pt-12 md:py-32 lg:py-36 xl:flex xl:h-screen xl:items-center xl:py-28'>
+				className='boxed relative z-50 py-16 sm:pb-24 sm:pt-12 md:py-32 lg:py-36 xl:flex xl:h-screen xl:items-center xl:py-28'>
 				<div className='mt-[100px] grid grid-cols-1 gap-8 md:grid-cols-2'>
 					<motion.div
 						id='introCopy'
@@ -38,8 +38,7 @@ const HeroNew = () => {
 					</motion.div>
 				</div>
 			</div>
-			{/* absolute -top-12 -right-24 z-0 w-2/3 max-w-full md:w-[60%] lg:w-1/2 */}
-			<HeroBackground className='hidden' />
+			<HeroBackground />
 		</>
 	);
 };
