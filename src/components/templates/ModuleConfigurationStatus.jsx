@@ -40,7 +40,7 @@ const ModuleConfigurationStatus = (props) => {
 	return (
 		<dl
 			id='ModuleConfigurationStatus'
-			className={` native-class ${props.moduleLayout}`}>
+			className={`group ${props.moduleLayout}`}>
 			{stats.map((item) => (
 				<div
 					key={item.id}

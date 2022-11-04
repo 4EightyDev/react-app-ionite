@@ -45,7 +45,7 @@ const Compliance = () => {
 						initial={{ y: 50, opacity: 0 }}
 						transition={{ delay: 0.5, duration: 1 }}>
 						<ModuleConfigurationStatus
-							moduleChildren='rounded-2xl last-of-type:hidden max-w-sm mx-auto sm:max-w-none sm:-mx-0 lg:last-of-type:block first-of-type:scale-[.8] sm:first-of-type:scale-[1] first-of-type:z-10 first-of-type:-translate-x-3 sm:first-of-type:-translate-x-0 sm:first-of-type:shadow-none first-of-type:shadow-2xl first-of-type:shadow-black/30 first-of-type:origin-left [:nth-of-type(2)&]:-translate-y-16 sm:[:nth-of-type(2)&]:-translate-y-0'
+							moduleChildren='group-hover:first-of-type:opacity-25 group-hover:last-of-type:opacity-25 group-hover:first-of-type:translate-x-32 group-hover:last-of-type:-translate-x-32 group-hover:[:nth-of-type(2)&]:shadow-2xl group-hover:[:nth-of-type(2)&]:shadow-black/50 group-hover:[:nth-of-type(2)&]:scale-[1.3] rounded-2xl last-of-type:hidden max-w-sm mx-auto sm:max-w-none sm:-mx-0 lg:last-of-type:block first-of-type:scale-[.8] sm:first-of-type:scale-[1] first-of-type:z-10 first-of-type:-translate-x-3 sm:first-of-type:-translate-x-0 sm:first-of-type:shadow-none first-of-type:shadow-2xl first-of-type:shadow-black/30 first-of-type:origin-left [:nth-of-type(2)&]:z-30 [:nth-of-type(2)&]:-translate-y-16 sm:[:nth-of-type(2)&]:-translate-y-0'
 							moduleLayout='flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row'
 						/>
 					</motion.div>
