@@ -10,12 +10,14 @@ const Compliance = () => {
 			<div className='relative overflow-hidden border-t border-b border-sky-500/30 bg-slate-900 py-8 brightness-[85%] sm:py-16 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center xl:py-36'>
 				<div className='boxed z-50 flex w-full flex-col gap-6 md:flex-row md:items-center lg:flex-col lg:px-32'>
 					<div className='relative w-full text-center md:text-left lg:pr-[25%]'>
-						<h2 className='mx-auto max-w-max bg-gradient-to-r from-green-400 to-sky-500 bg-clip-text text-[1.8rem] font-bold leading-none tracking-tighter text-transparent md:mx-0 lg:text-[2.4rem] xl:text-[2.8rem]'>
-							Government Compliance
-						</h2>
-						<p className='mb-6 text-[1.2rem] font-medium tracking-tight text-white lg:text-[1.4rem] xl:text-[1.6rem]'>
-							Lorem ipsum dolor sit amet.
-						</p>
+						<div>
+							<h2 className='mx-auto max-w-max bg-gradient-to-r from-green-400 to-sky-500 bg-clip-text text-[1.8rem] font-bold leading-none tracking-tighter text-transparent md:mx-0 lg:text-[2.4rem] xl:text-[2.8rem]'>
+								Government Compliance
+							</h2>
+							<p className='mb-6 text-[1.2rem] font-medium tracking-tight text-white lg:text-[1.4rem] xl:text-[1.6rem]'>
+								Lorem ipsum dolor sit amet.
+							</p>
+						</div>
 						<p className='sm:text-md mx-auto mb-8 max-w-md text-slate-900 dark:text-white sm:max-w-xl lg:ml-0 lg:max-w-2xl'>
 							Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
 							quis in viverra tristique sem. Ornare feugiat viverra eleifend

@@ -1,12 +1,16 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 
 const HeroBackground = (props) => {
 	return (
 		<div>
-			<div className='absolute top-0 left-0 aspect-square w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-500 opacity-5 blur-3xl'></div>
-			<svg
+			<div className='fixed top-0 left-0 aspect-square w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-500/5 blur-3xl'></div>
+			<motion.svg
 				id='a'
 				className={props.className}
+				whileInView={{ opacity: 0.02, filter: 'blur(0)' }}
+				viewport={{ once: true }}
+				initial={{ opacity: 0, filter: 'blur(20px)' }}
+				transition={{ duration: 3 }}
 				xmlns='http://www.w3.org/2000/svg'
 				viewBox='0 0 152.41 219.22'>
 				<g fill='var(--sky-500)'>
@@ -77,7 +81,7 @@ const HeroBackground = (props) => {
 					<path d='M5.28,85.08c-.14,0-.28-.03-.41-.09-.5-.23-.73-.82-.5-1.33C14.52,61.35,41.71,34.79,63.74,25.66c10.27-4.26,22.33-6,33.95-4.92,12.85,1.2,24.63,5.76,34.09,13.17,.43,.34,.51,.97,.17,1.4s-.97,.51-1.4,.17c-20.38-15.98-47.85-15.52-66.04-7.98C42.87,36.48,16.16,62.57,6.19,84.49c-.17,.37-.53,.59-.91,.59Z' />
 					<path d='M150.09,149.62c-.18,0-.36-.05-.53-.15-7.51-4.65-12.63-9.71-16.61-16.38-4-6.71-7.21-15.66-10.4-29.02-.13-.54,.2-1.08,.74-1.21,.54-.13,1.08,.2,1.21,.74,6.01,25.17,12.11,35.49,26.12,44.17,.47,.29,.61,.91,.32,1.38-.19,.31-.52,.47-.85,.47Z' />
 				</g>
-			</svg>
+			</motion.svg>
 		</div>
 	);
 };
