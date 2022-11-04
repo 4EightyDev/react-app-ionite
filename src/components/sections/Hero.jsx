@@ -1,4 +1,4 @@
-import { BtnIonite, HeroBackground, ModuleTable, AppIonite } from '../';
+import { BtnIonite, HeroBackground, AppIonite } from '../';
 import { motion } from 'framer-motion';
 
 const HeroNew = () => {
@@ -13,8 +13,8 @@ const HeroNew = () => {
 						className='text-center md:text-left'
 						viewport={{ once: true }}
 						whileInView={{ y: 0, opacity: 1 }}
-						initial={{ y: 500, opacity: 0 }}
-						transition={{ delay: 0.5 }}>
+						initial={{ y: 50, opacity: 0 }}
+						transition={{ delay: 0.5, duration: 1 }}>
 						<h1 className='mx-auto mb-6 w-max text-[3.5rem] font-bold leading-none tracking-tight sm:text-[5rem] md:mx-0 md:text-[4rem] lg:text-[5rem] xl:text-[6rem]'>
 							<span className='bg-gradient-to-r from-sky-300 to-sky-200 bg-clip-text text-transparent'>
 								Identity
@@ -34,8 +34,8 @@ const HeroNew = () => {
 						className='relative flex items-center justify-center'
 						whileInView={{ y: 0, opacity: 1 }}
 						viewport={{ once: true }}
-						initial={{ y: 500, opacity: 0 }}
-						transition={{ delay: 1 }}>
+						initial={{ y: 50, opacity: 0 }}
+						transition={{ delay: 0.5, duration: 1 }}>
 						<AppIonite class='w-full max-w-xl md:absolute md:left-0 md:w-screen md:max-w-3xl lg:max-w-3xl xl:max-w-4xl' />
 					</motion.div>
 				</div>

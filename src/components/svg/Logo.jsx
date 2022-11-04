@@ -16,7 +16,7 @@ const Logo = () => {
 				id='ionite-logo'
 				whileInView={{ opacity: 1, filter: 'blur(0)' }}
 				initial={{ opacity: 0, filter: 'blur(200px)' }}
-				transition={{ delay: 1 }}
+				transition={{ delay: 0.75 }}
 				className={classNames(
 					scrollPosition > 0
 						? 'relative z-50 h-[60px] opacity-0 blur-lg transition-all duration-500'
@@ -54,7 +54,7 @@ const Logo = () => {
 				id='ionite-mark'
 				whileInView={{ opacity: 1, filter: 'blur(0)' }}
 				initial={{ opacity: 0, filter: 'blur(200px)' }}
-				transition={{ delay: 0 }}
+				transition={{ delay: 0.5 }}
 				className={classNames(
 					scrollPosition > 0
 						? 'opacity-1 absolute left-0 top-[.01rem] z-30 h-[60px] transition-all delay-300 duration-500'

@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 const BtnPrimary = (props) => {
 	return (
 		<motion.button
-			viewport={{ once: true }}
 			whileInView={{ scale: 1, opacity: 1 }}
 			initial={{ scale: 2, opacity: 0 }}
-			transition={{ delay: 0.5 }}
+			transition={{ delay: 1.5 }}
 			className={`group rounded-full shadow-lg shadow-sky-500/10 ${props.className}`}>
 			<div class='flex rounded-full bg-gradient-to-r from-sky-500/20 via-green-300 to-sky-500/20 p-px'>
 				<div class='flex-center relative min-w-[200px] rounded-full bg-slate-900 px-5 py-3'>
