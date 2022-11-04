@@ -1,3 +1,14 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnType": false,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"html.format.unformatted": "",
+	"html.format.enable": false,
+	"prettier.proseWrap": "never",
+	"html.format.wrapAttributes": "auto",
+	"prettier.singleAttributePerLine": true,
+	"prettier.singleQuote": true
 }

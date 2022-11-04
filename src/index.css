@@ -4,51 +4,54 @@
 
 /* Mont Font */
 @font-face {
-	font-family: "Mont";
+	font-family: 'Mont';
 	font-weight: 200;
 	font-display: block;
 	font-style: normal;
-	font-named-instance: "Light";
-	src: url("fonts/Mont-Light.woff") format("woff2");
+	font-named-instance: 'Light';
+	src: url('fonts/Mont-Light.woff') format('woff2');
 }
 
 @font-face {
-	font-family: "Mont";
+	font-family: 'Mont';
 	font-weight: 300;
 	font-display: block;
 	font-style: normal;
-	font-named-instance: "Book";
-	src: url("fonts/Mont-Book.woff") format("woff2");
+	font-named-instance: 'Book';
+	src: url('fonts/Mont-Book.woff') format('woff2');
 }
 
 @font-face {
-	font-family: "Mont";
+	font-family: 'Mont';
 	font-weight: 400;
 	font-display: block;
 	font-style: normal;
-	font-named-instance: "Regular";
-	src: url("fonts/Mont-Regular.woff") format("woff2");
+	font-named-instance: 'Regular';
+	src: url('fonts/Mont-Regular.woff') format('woff2');
 }
 
 @font-face {
-	font-family: "Mont";
+	font-family: 'Mont';
 	font-weight: 500;
 	font-display: block;
 	font-style: normal;
-	font-named-instance: "SemiBold";
-	src: url("fonts/Mont-SemiBold.woff") format("woff2");
+	font-named-instance: 'SemiBold';
+	src: url('fonts/Mont-SemiBold.woff') format('woff2');
 }
 
 @font-face {
-	font-family: "Mont";
+	font-family: 'Mont';
 	font-weight: 600;
 	font-display: block;
 	font-style: normal;
-	src: url("fonts/Mont-Bold.woff") format("woff2");
-	font-named-instance: "Bold";
+	src: url('fonts/Mont-Bold.woff') format('woff2');
+	font-named-instance: 'Bold';
 }
 
 @layer components {
+	.boxed {
+		@apply mx-auto max-w-3xl px-6 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl xl:px-0 2xl:max-w-9xl 2xl:px-8;
+	}
 	.btn {
 		@apply block rounded-3xl bg-gradient-to-br px-5 pt-3 pb-2.5 font-bold leading-5 ring-2 ring-inset drop-shadow-xl transition-all hover:rotate-1 hover:scale-110;
 	}
@@ -71,4 +74,15 @@
 }
 button:focus {
 	outline: 0 !important;
+}
+@media (max-width: 575px) {
+	#Hero div#moduleTable tbody tr:nth-of-type(2),
+	#Hero div#moduleTable tbody tr:nth-of-type(3) {
+		display: none;
+	}
+}
+@media (min-width: 576px) and (max-width: 1279px) {
+	#Hero div#moduleTable tbody tr:last-of-type {
+		display: none;
+	}
 }
